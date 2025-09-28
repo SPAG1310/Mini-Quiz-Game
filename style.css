@@ -1,0 +1,11 @@
+.container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 1rem;
+}
+
+.leaderboard{
+    min-height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+}
