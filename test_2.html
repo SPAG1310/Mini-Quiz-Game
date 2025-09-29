@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Game</title>
+  <style>
+    :root {
+      --primary: #4e6ef2;
+      --secondary: #eef1ff;
+      --accent: #ffcc00;
+      --dark: #1c1c1c;
+      --light: #ffffff;
+      --radius: 12px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--secondary);
+      color: var(--dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--light);
+      width: 100%;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom-left-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    section.quiz {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section.quiz h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .question {
+      margin: 1.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .options {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .options button {
+      padding: 0.8rem;
+      border: 2px solid var(--primary);
+      background: var(--light);
+      color: var(--dark);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .options button:hover {
+      background: var(--primary);
+      color: var(--light);
+    }
+
+    section.leaderboard {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section.leaderboard h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    ol {
+      padding-left: 1.2rem;
+    }
+
+    ol li {
+      margin: 0.5rem 0;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: center;
+      background: var(--primary);
+      color: var(--light);
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ultimate Quiz Challenge</h1>
+  </header>
+
+  <main>
+    <!-- Quiz Section -->
+    <section class="quiz" aria-label="Quiz Section">
+      <h2>Question 1</h2>
+      <p class="question">Which language is used to style web pages?</p>
+      <div class="options">
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>JavaScript</button>
+        <button>Python</button>
+      </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard" aria-label="Leaderboard Section">
+      <h2>Leaderboard</h2>
+      <ol>
+        <li>Player1 — 120 pts</li>
+        <li>Player2 — 95 pts</li>
+        <li>Player3 — 80 pts</li>
+        <li>Player4 — 65 pts</li>
+        <li>Player5 — 40 pts</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quiz Masters Inc.</p>
+  </footer>
+</body>
+</html>
+<!--Entire code explanation on chat gpt-->
